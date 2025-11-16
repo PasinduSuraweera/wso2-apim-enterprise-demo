@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![WSO2 APIM](https://img.shields.io/badge/WSO2-API%20Manager%204.x-orange?style=for-the-badge&logo=wso2)
+![WSO2 APIM](https://img.shields.io/badge/WSO2-API%20Manager%204.6.0-orange?style=for-the-badge&logo=wso2)
 ![Node.js](https://img.shields.io/badge/Node.js-18.x-green?style=for-the-badge&logo=node.js)
 ![OAuth2](https://img.shields.io/badge/Security-OAuth2-blue?style=for-the-badge&logo=oauth)
 ![Rate Limiting](https://img.shields.io/badge/Rate%20Limiting-50%2Fmin-red?style=for-the-badge)
