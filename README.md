@@ -177,6 +177,66 @@ Testing APPLICATION rate limiting (50 req/min)...
 🔄 Zero Errors: 100% reliability
 ```
 
+## 🔄 Complete Workflow Demonstration
+
+### 1. API Development & Configuration
+
+**Step 1: Resource Configuration** - Define REST endpoints
+![Resource Configuration](screenshots/(1)resources-config.png)
+
+**Step 2: Context Setup** - Configure API context and policies  
+![Context Setup](screenshots/(2)resources-config-and-context.png)
+
+**Step 3: Deployment** - Deploy to WSO2 Gateway
+![Deployment](screenshots/(4)deployment.png)
+
+### 2. API Publishing & Portal
+
+**Step 4: Publishing** - Publish API to Developer Portal
+![Publishing](screenshots/(5)published-overview.png)
+
+**Step 5: Portal View** - API available for developers
+![Portal View](screenshots/(6)API-dev-portal.png)
+
+**Step 6: Portal Overview** - Complete portal experience
+![Portal Overview](screenshots/(7)dev-portal-overview.png)
+
+### 3. Application & Subscription Management
+
+**Step 7: App Creation** - Create client application
+![App Creation](screenshots/(8)application-creation.png)
+
+**Step 8: App Success** - Application configured
+![App Success](screenshots/(9)successful-App-creation.png)
+
+**Step 9: Subscription** - Subscribe to API
+![Subscription](screenshots/(3)add-subscription.png)
+
+**Step 10: Subscription Complete** - Active subscription
+![Subscription Complete](screenshots/(11)subscription.png)
+
+### 4. Security & Testing
+
+**Step 11: Token Generation** - Generate OAuth2 tokens
+![Token Generation](screenshots/(10)token-generation.png)
+
+**Step 12: Token Testing** - Validate tokens
+![Token Testing](screenshots/(12)test-access-token.png)
+
+**Step 13: Successful Auth** - Authenticated requests
+![Successful Auth](screenshots/(13)successful-request.png)
+
+**Step 14: Security Test** - Security validation
+![Security Test](screenshots/(16)no-token-unsuccessfull.png)
+
+### 5. Performance & Rate Limiting
+
+**Step 15: Rate Limiting** - Live throttling demonstration
+![Rate Limiting](screenshots/(14)rate-limiting.png)
+
+**Step 16: Success with Token** - Consistent performance
+![Success with Token](screenshots/(15)request-success-with-AT.png)
+
 ## 📚 Documentation
 
 | Document | Description |
@@ -196,7 +256,7 @@ Testing APPLICATION rate limiting (50 req/min)...
 - **Data**: JSON file storage with in-memory caching
 
 ### API Gateway
-- **Platform**: WSO2 API Manager 4.x
+- **Platform**: WSO2 API Manager 4.6.0
 - **Security**: OAuth2 Client Credentials
 - **Policies**: Application-level rate limiting
 - **Transport**: HTTPS with SSL termination
