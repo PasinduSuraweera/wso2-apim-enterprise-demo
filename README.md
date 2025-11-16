@@ -320,6 +320,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ Star this repository if it helped you learn WSO2 API Manager!**
 
-Made with ❤️ by [PasinduSuraweera](https://github.com/PasinduSuraweera)
+Made by [PasinduSuraweera](https://github.com/PasinduSuraweera)
 
 </div>
