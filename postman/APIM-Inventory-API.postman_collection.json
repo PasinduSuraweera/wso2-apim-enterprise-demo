@@ -1,0 +1,107 @@
+{
+  "info": {
+    "name": "WSO2 APIM - Inventory API",
+    "description": "Collection for testing the Inventory API through WSO2 API Manager",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{access_token}}",
+        "type": "string"
+      }
+    ]
+  },
+  "variable": [
+    {
+      "key": "gateway_url",
+      "value": "https://localhost:8243",
+      "type": "string"
+    },
+    {
+      "key": "api_context",
+      "value": "/inventory/v1.0",
+      "type": "string"
+    },
+    {
+      "key": "access_token", 
+      "value": "your-token-here",
+      "type": "string"
+    }
+  ],
+  "item": [
+    {
+      "name": "Health Check",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{gateway_url}}{{api_context}}/health",
+          "host": ["{{gateway_url}}"],
+          "path": ["{{api_context}}", "health"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Items",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{gateway_url}}{{api_context}}/items",
+          "host": ["{{gateway_url}}"],
+          "path": ["{{api_context}}", "items"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Item by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{gateway_url}}{{api_context}}/items/1",
+          "host": ["{{gateway_url}}"],
+          "path": ["{{api_context}}", "items", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Categories",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{gateway_url}}{{api_context}}/categories",
+          "host": ["{{gateway_url}}"],
+          "path": ["{{api_context}}", "categories"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Rate Limiting Test (Burst)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{gateway_url}}{{api_context}}/items?limit=1",
+          "host": ["{{gateway_url}}"],
+          "path": ["{{api_context}}", "items"],
+          "query": [
+            {
+              "key": "limit",
+              "value": "1"
+            }
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
