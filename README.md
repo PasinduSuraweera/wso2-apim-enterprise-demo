@@ -48,7 +48,7 @@ graph LR
 
 | Component | Technology | Purpose | Performance |
 |-----------|------------|---------|-------------|
-| **API Gateway** | WSO2 API Manager 4.x | Authentication, Rate Limiting, Routing | <10ms overhead |
+| **API Gateway** | WSO2 API Manager 4.6.0 | Authentication, Rate Limiting, Routing | <10ms overhead |
 | **Backend Service** | Node.js + Express | Business Logic, Data Processing | ~200ms response |
 | **Security Layer** | OAuth2 Client Credentials | Token-based Authentication | 100% validation |
 | **Rate Limiting** | Application Policy | Traffic Control | 50 req/min precision |
@@ -59,7 +59,7 @@ graph LR
 ### Prerequisites
 - Node.js 18+
 - Docker & Docker Compose
-- WSO2 API Manager 4.x
+- WSO2 API Manager 4.6.0
 - cURL or Postman
 
 ### 1-Minute Setup
