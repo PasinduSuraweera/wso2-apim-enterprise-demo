@@ -15,20 +15,20 @@
 
 ---
 
-## 🏆 Project Overview
+## Project Overview
 
 This project demonstrates **enterprise-grade API management** using WSO2 API Manager, showcasing the complete API lifecycle from development to consumption. Built as a comprehensive example of modern API gateway patterns and security implementations.
 
-### 🎯 Key Achievements
+### Key Achievements
 
-- ✅ **Complete API Lifecycle**: Design → Develop → Publish → Deploy → Consume
-- ✅ **Enterprise Security**: OAuth2 Client Credentials flow with token validation
-- ✅ **Intelligent Rate Limiting**: Application-level throttling (50 requests/minute)
-- ✅ **Production Patterns**: CORS, error handling, monitoring, documentation
-- ✅ **Zero Downtime**: 100% availability during load testing (60 concurrent requests)
-- ✅ **Sub-200ms Response**: Consistent performance under load
+- **Complete API Lifecycle**: Design → Develop → Publish → Deploy → Consume
+- **Enterprise Security**: OAuth2 Client Credentials flow with token validation
+- **Intelligent Rate Limiting**: Application-level throttling (50 requests/minute)
+- **Production Patterns**: CORS, error handling, monitoring, documentation
+- **Zero Downtime**: 100% availability during load testing (60 concurrent requests)
+- **Sub-200ms Response**: Consistent performance under load
 
-## 🏗️ Architecture
+## Architecture
 
 ```mermaid
 graph LR
@@ -44,7 +44,7 @@ graph LR
     style D fill:#bbf,stroke:#333,stroke-width:2px
 ```
 
-### 📊 System Components
+### System Components
 
 | Component | Technology | Purpose | Performance |
 |-----------|------------|---------|-------------|
@@ -54,7 +54,7 @@ graph LR
 | **Rate Limiting** | Application Policy | Traffic Control | 50 req/min precision |
 | **Data Layer** | JSON File Store | Inventory Management | In-memory caching |
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Prerequisites
 - Node.js 18+
@@ -81,39 +81,39 @@ cp .env.example .env
 
 ### Expected Output
 ```bash
-✅ Authentication: 100% successful
-✅ Rate Limiting: Triggered at exactly 50 requests
-✅ Response Time: ~200ms average
-✅ Availability: 100% uptime during testing
+Authentication: 100% successful
+Rate Limiting: Triggered at exactly 50 requests
+Response Time: ~200ms average
+Availability: 100% uptime during testing
 ```
 
-## ⚡ Features
+## Features
 
-### 🔐 Enterprise Security
+### Enterprise Security
 - **OAuth2 Client Credentials Flow**: Industry-standard authentication
 - **Token Validation**: Real-time security enforcement
 - **Access Control**: Granular permission management
 - **Security Headers**: CORS, Helmet.js protection
 
-### 📈 Intelligent Rate Limiting
+### Intelligent Rate Limiting
 - **Application-Level Policies**: 50 requests per minute
 - **Subscription Tiers**: Gold (5000), Silver, Bronze (1000) req/min
 - **Real-Time Enforcement**: Precise throttling with 429 responses
 - **Policy Hierarchy**: Most restrictive policy wins
 
-### 🎯 Production-Ready API
+### Production-Ready API
 - **5 RESTful Endpoints**: Complete inventory management
 - **Error Handling**: Comprehensive HTTP status codes
 - **Request Logging**: Morgan middleware integration
 - **Health Monitoring**: Service status and uptime tracking
 
-### 📊 Performance Metrics
+### Performance Metrics
 - **Throughput**: 50 authenticated requests/minute
 - **Latency**: 200ms average response time
 - **Availability**: 100% during load testing
 - **Security**: Zero unauthorized access attempts succeeded
 
-## 🔄 Complete Workflow Demonstration
+## Complete Workflow Demonstration
 
 ### 1. API Development & Configuration
 
@@ -173,7 +173,7 @@ cp .env.example .env
 **Step 16: Success with Token** - Consistent performance
 ![Success with Token](screenshots/(15)request-success-with-AT.png)
 
-## 📖 API Reference
+## API Reference
 
 ### Base URL
 ```
@@ -209,35 +209,35 @@ curl -H "Authorization: Bearer YOUR_ACCESS_TOKEN" \
 }
 ```
 
-## 📈 Test Results
+## Test Results
 
 ### Rate Limiting Verification
 ```bash
 Testing APPLICATION rate limiting (50 req/min)...
-✅ Requests 1-50:  HTTP 200 OK
-🚫 Requests 51-60: HTTP 429 Too Many Requests
-📊 Success Rate:   83.3% (50/60)
-⚡ Avg Response:   ~200ms
+Requests 1-50:  HTTP 200 OK
+Requests 51-60: HTTP 429 Too Many Requests
+Success Rate:   83.3% (50/60)
+Avg Response:   ~200ms
 ```
 
 ### Security Validation
 ```bash
-❌ No Token:      HTTP 401 Unauthorized
-✅ Valid Token:   HTTP 200 OK + JSON Response  
-❌ Invalid Token: HTTP 403 Forbidden
+No Token:      HTTP 401 Unauthorized
+Valid Token:   HTTP 200 OK + JSON Response  
+Invalid Token: HTTP 403 Forbidden
 ```
 
 ### Load Testing Results
 ```bash
-📊 Concurrent Requests: 60
-✅ Successful: 50 (83.3%)
-🚫 Rate Limited: 10 (16.7%)
-⚡ Average Latency: 198ms
-📈 Peak Memory: 45MB
-🔄 Zero Errors: 100% reliability
+Concurrent Requests: 60
+Successful: 50 (83.3%)
+Rate Limited: 10 (16.7%)
+Average Latency: 198ms
+Peak Memory: 45MB
+Zero Errors: 100% reliability
 ```
 
-## 📚 Documentation
+## Documentation
 
 | Document | Description |
 |----------|-------------|
@@ -246,7 +246,7 @@ Testing APPLICATION rate limiting (50 req/min)...
 | [API Documentation](API-DOCUMENTATION.md) | Complete endpoint reference |
 | [Troubleshooting](TROUBLESHOOTING.md) | Common issues and solutions |
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 ### Backend Service
 - **Runtime**: Node.js 18.x
@@ -267,7 +267,7 @@ Testing APPLICATION rate limiting (50 req/min)...
 - **Documentation**: Markdown, Mermaid diagrams
 - **Version Control**: Git with security best practices
 
-## 🎯 Real-World Applications
+## Real-World Applications
 
 This architecture pattern is used by enterprises for:
 
@@ -277,22 +277,22 @@ This architecture pattern is used by enterprises for:
 - **SaaS Platforms**: Multi-tenant API access control
 - **DevOps Automation**: CI/CD pipeline API endpoints
 
-## 🏆 Professional Skills Demonstrated
+## Professional Skills Demonstrated
 
 ### Technical Competencies
-- ✅ **API Lifecycle Management**: Complete SDLC implementation
-- ✅ **Enterprise Security**: OAuth2 and token management
-- ✅ **Performance Optimization**: Rate limiting and caching
-- ✅ **System Integration**: Gateway-to-backend communication
-- ✅ **Documentation**: Professional technical writing
+- **API Lifecycle Management**: Complete SDLC implementation
+- **Enterprise Security**: OAuth2 and token management
+- **Performance Optimization**: Rate limiting and caching
+- **System Integration**: Gateway-to-backend communication
+- **Documentation**: Professional technical writing
 
 ### DevOps Practices  
-- ✅ **Environment Management**: Secure configuration handling
-- ✅ **Testing Automation**: Comprehensive validation scripts
-- ✅ **Performance Monitoring**: Metrics collection and analysis
-- ✅ **Security Best Practices**: Token security and access control
+- **Environment Management**: Secure configuration handling
+- **Testing Automation**: Comprehensive validation scripts
+- **Performance Monitoring**: Metrics collection and analysis
+- **Security Best Practices**: Token security and access control
 
-## 🤝 Contributing
+## Contributing
 
 This project serves as a learning resource for WSO2 API Manager concepts. Feel free to:
 
@@ -301,11 +301,11 @@ This project serves as a learning resource for WSO2 API Manager concepts. Feel f
 3. **Improve documentation**
 4. **Submit issues** for discussion
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🙋‍♂️ Author
+## Author
 
 **Pasindu Suraweera**
 - LinkedIn: [linkedin.com/in/pasindu-suraweera](https://linkedin.com/in/pasindu-suraweera-03s)
